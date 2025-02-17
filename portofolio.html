@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedim's Portfolio</title>
+    <link rel="stylesheet" href="portofolio.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Nedim Misic</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="bio">
+                    <p>I’m Nedim, a passionate software developer with experience in Full-Stack development. I focus on
+                        creating clean, maintainable code with a strong foundation in .NET Core, Flutter, and Angular.
+                        Let’s work together to bring your ideas to life!</p>
+                    <p><strong>My Development Philosophy:</strong> I believe in writing efficient, clean, and testable
+                        code. I’m passionate about continuous learning and improving my skills, always striving to build
+                        the best possible solution.</p>
+                    <p><strong>Technologies I Enjoy:</strong> .NET Core(MVC, RESTful), Flutter, JavaScript, Angular,
+                        Docker, Git</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <div class="project-details">
+                        <h3>Ekarte Web App</h3>
+                        <p>A modern web application for seamless event ticket management, designed for both organizers
+                            and attendees.
+                            Built with .NET Core and Angular, it ensures a smooth user experience. An external mail
+                            service is integrated to send tickets directly to users' emails upon successful booking.</p>
+
+                        <p><strong>Technologies used:</strong> .NET Core(MVC), Angular, JavaScript, HTML/CSS, Microsoft
+                            SQL</p>
+                        <p><strong>Key Features:</strong> Secure user authentication, event creation, real-time ticket
+                            purchasing, and integrated payment processing.</p>
+                        <p><strong>Challenges:</strong> Implementing Angular components within an MVC-based application
+                            while maintaining performance and scalability.</p>
+                        <button class="gallery-btn"
+                            onclick="window.open('https://github.com/nedim-m/ekarte', '_blank')">View Project
+                            Code</button>
+                        <button class="gallery-btn" onclick="openGallery('ekarte')">View Gallery</button>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-details">
+                        <h3>Wellness Health App</h3>
+                        <p>A comprehensive mobile and desktop application for treatment reservations, offering users an
+                            easy way to book and manage their wellness treatments.
+                            Developed with Flutter and a .NET Core Web API (RESTful) for a seamless cross-platform
+                            experience. The app uses SignalR for real-time communication between the mobile and desktop
+                            applications. Notifications about bookings and updates are sent via RabbitMQ, and an
+                            external mail service is used to send confirmation and reminder emails to users.</p>
+
+
+                        <p><strong>Technologies used:</strong> Flutter (Dart), .NET Core Web API (RESTful), RabbitMQ,
+                            Microsoft SQL</p>
+                        <p><strong>Key Features:</strong> Personalized health tracking, user profile management,
+                            interactive data visualization, and secure payment integration.</p>
+                        <p><strong>Challenges:</strong> Ensuring smooth synchronization across mobile (Android), and
+                            Desktop platforms.
+                            Implementing a secure payment system via Stripe and PayPal while managing high traffic loads
+                            during peak usage.</p>
+                        <button class="gallery-btn"
+                            onclick="window.open('https://github.com/nedim-m/wellness-health', '_blank')">View Project
+                            Code</button>
+                        <button class="gallery-btn" onclick="openGallery('wellness')">View Gallery</button>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="project-item">
+
+                    <div class="project-details">
+                        <h3>Ticket Mobile App</h3>
+                        <p>A conceptual mobile application for event ticketing, designed with a focus on UI/UX.
+                            Created as a design prototype to showcase an intuitive and user-friendly interface.</p>
+                        <p><strong>Technologies used:</strong> Flutter (Dart)</p>
+                        <p><strong>Key Features:</strong> Clean and modern UI, simplified ticket purchasing process, and
+                            an intuitive event browsing experience.</p>
+                        <p><em>Note:</em> This project is a UI/UX design prototype and does not include backend
+                            functionality.</p>
+                        <button class="gallery-btn"
+                            onclick="window.open('https://github.com/nedim-m/ticket-booking-app-sample', '_blank')">View
+                            Project Code</button>
+                        <button class="gallery-btn" onclick="openGallery('ticket')">View Gallery</button>
+                    </div>
+                </div>
+                <div class="project-item">
+
+                    <div class="project-details">
+                        <h3>RPG-Creation Web App</h3>
+                        <p>This web application allows players to create and manage their own RPG adventures.
+                            The game features dice rolling mechanics, customizable characters, and interactive
+                            storytelling.</p>
+                        <p><strong>Technologies used:</strong> Java (Spring), Angular, PostgreSQL</p>
+                        <p><strong>Key Features:</strong> Character creation system, dice-based mechanics,
+                            custom storylines, and interactive narratives.</p>
+                        <p><strong>Challenges:</strong> Implementing complex RPG mechanics and optimizing the database
+                            for dynamic story elements.</p>
+                        <p><em>Note:</em> Due to company policy, the source code is not publicly available.</p>
+                        <button class="gallery-btn" disabled>View Project Code</button>
+                        <button class="gallery-btn" disabled>View Gallery</button>
+                    </div>
+
+                </div>
+                <div class="project-item">
+                    <div class="project-details">
+                        <h3>Rent a Service Web App</h3>
+                        <p>A simple web application for renting various services, such as lawn mowing or home repairs.
+                            Users can request a service, and an admin approves or declines the request.</p>
+                        <p><strong>Technologies used:</strong> .NET Core(MVC), Microsoft SQL</p>
+                        <p><strong>Key Features:</strong> User authentication, service request management, and admin
+                            approval system.</p>
+                        <p><strong>Challenges:</strong> Implementing a structured workflow for service approvals while
+                            keeping the app simple and intuitive.</p>
+                        <p><em>Note:</em> This project was developed as part of a course to practice building web
+                            applications with .NET Core.</p>
+                        <button class="gallery-btn"
+                            onclick="window.open('https://github.com/nedim-m/RentAService', '_blank')">View Project
+                            Code</button>
+                        <button class="gallery-btn" disabled>View Gallery</button>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeGallery()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="nav-buttons">
+            <button onclick="changeImage(-1)">&#10094; Prev</button>
+            <button onclick="changeImage(1)">Next &#10095;</button>
+        </div>
+    </div>
+    <script>
+        let images = {
+            "ekarte": ["screens/ekarte (1).png", "screens/ekarte (2).png", "screens/ekarte (3).png", "screens/ekarte (4).png", "screens/ekarte (5).png", "screens/ekarte (6).png"],
+            "wellness": [
+                "screens/wellness (1).png", "screens/wellness (2).png", "screens/wellness (3).png",
+                "screens/wellness (4).png", "screens/wellness (5).png", "screens/wellness (6).png",
+                "screens/wellness (7).png", "screens/wellness (8).png", "screens/wellness (9).png",
+                "screens/wellness (10).png", "screens/wellness (11).png"
+            ],
+            "ticket": ["screens/ticket (1).png", "screens/ticket (2).png", "screens/ticket (3).png", "screens/ticket (4).png"],
+        };
+        let currentProject = "";
+        let currentIndex = 0;
+
+        function openGallery(project) {
+            currentProject = project;
+            currentIndex = 0;
+            document.getElementById("modalImage").src = images[project][currentIndex];
+            document.getElementById("imageModal").style.display = "block";
+        }
+
+        function closeGallery() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        function changeImage(step) {
+            currentIndex += step;
+            if (currentIndex < 0) {
+                currentIndex = images[currentProject].length - 1;
+            } else if (currentIndex >= images[currentProject].length) {
+                currentIndex = 0;
+            }
+            document.getElementById("modalImage").src = images[currentProject][currentIndex];
+        }
+    </script>
+
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>.NET Core:</strong> Proficient in developing REST APIs, MVC architecture, and creating
+                    scalable web applications.</li>
+                <li><strong>Java (Spring):</strong> Familiar with developing REST APIs.</li>
+                <li><strong>C# (WinForms):</strong> Experience building desktop applications with a focus on usability
+                    and performance.</li>
+                <li><strong>Flutter(Dart):</strong> Creating cross-platform mobile and desktop apps with Flutter for
+                    both Android and iOS.</li>
+                <li><strong>JavaScript (Angular & jQuery):</strong> Basic understanding of front-end frameworks like
+                    Angular, and experience with jQuery.</li>
+                <li><strong>Microsoft SQL & Entity Framework:</strong> Experience in database design, creating queries,
+                    and using ORM for data access.</li>
+                <li><strong>Git & GitHub:</strong> Familiar with version control and collaborative development using
+                    Git.</li>
+                <li><strong>Docker:</strong> Familiar with containerization and using Docker for application deployment
+                    and management.</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Internship at Zira:</strong> Gained hands-on experience working with Java, Angular, and
+                    backend systems in a collaborative team environment.</li>
+                <li><strong>University Projects:</strong> Developed web and mobile apps using .NET Core, Flutter(Dart),
+                    and SQL databases. Worked on problem-solving and optimizing performance.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Information Technologies – Software Development</strong> Faculty of Information
+                    Technologies, University Džemal Bijedić of Mostar</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email me at: <a href="mailto:nedim_misic@hotmail.com" class="email-link">nedim_misic@hotmail.com</a></p>
+
+            <ul class="social-links">
+
+                <li><a href="https://github.com/nedim-m" target="_blank">GitHub</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nedim's Portfolio | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
